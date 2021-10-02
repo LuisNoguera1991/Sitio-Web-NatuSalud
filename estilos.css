@@ -1,0 +1,976 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:focus{
+outline: none;
+}
+/*Codigo del body */
+body{
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Raleway', sans-serif;
+
+}
+
+.nav-item .nav-link{
+  text-decoration: none;
+  color:white;
+}
+/*Codigo para nav que subraye por donde pasa el cursor*/
+/*.nav-item a:hover{
+    text-decoration: underline;
+    color: white;
+}*/
+
+
+.nav-item a:hover {
+  background-color: coral;
+  color: #fff;
+}
+
+.carousel-inner{
+  margin: auto;
+display: flex;
+/*height: 50%;
+width: 50%;*/
+align-items: center;
+
+} 
+ 
+.carousel-item .img{
+  height: 200px;
+  width: 100px;
+}
+
+/*codigo para el texto quienes somos*/
+.quienessomos{
+  color: #fff;
+  text-decoration: none;
+        line-height: 1.5em;
+        text-align: center;
+}
+
+.quienes-somos h2{
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.5em;
+
+    }
+
+/*Codigo de css servicios*/
+.galeria-contenedor h3{
+text-align: center;
+}
+
+.extra-galeria a{
+ color: #fff;
+ font-size: x-large;
+}
+
+.galeria-contenedor p{
+  text-align: center;
+}
+
+.galeria{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.galeria-contenedor h3{
+   margin-top: 50px;
+    color:white;
+}
+
+.galeria-contenedor  p{
+    margin-top: 50px;
+     color:white;
+    
+ }
+.galeria-img{
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 5px rgba (0, 0, 0, 75);
+}
+
+.galeria-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    vertical-align: top;
+    transform: scale(1);
+    transition: transform .6s;
+}
+
+.galeria-img img:hover{
+    transform: scale(1.3);
+}
+
+.extra-galeria{
+    position: absolute;
+    top: 0;
+    background: rgba(200, 93, 50, .75);
+    width: 100%;
+    height: 100%;
+    transform: translate(100%, -100%);
+    transition: transform .6s;
+}
+
+.galeria-img:hover .extra-galeria{
+    transform: translate(0);
+}
+
+.extra-galeria p{
+    color: white;
+    width: 95%;
+    margin: 10px auto;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.extra-galeria  li{
+    color: white;
+    width: 95%;
+    margin: 10px auto;
+    font-weight: 50;
+    text-align: justify;
+}
+
+.extra-galeria a{
+ 
+  font-weight: 30px;
+  font-size: small;
+}
+
+/*codigo de cada servios de la clinica */
+.fitoterapia{
+  text-align: center;
+  color: #fff;
+  
+}
+
+.fitoterapia p{
+  color: #fff;
+  text-align: center;
+}
+
+.acunpuntura{
+  text-align: center;
+  color: #fff;
+}
+
+.acunpuntura p{
+  color: #fff;
+  text-align: center;
+}
+
+.moxibustion{
+  text-align: center;
+  color: #fff;
+}
+
+.moxibustion p{
+  color: #fff;
+  text-align: center;
+}
+
+.auriculoterapia{
+color: #fff;
+  text-align: center;
+}
+
+.auriculoterapia p{
+  color: #fff;
+  text-align: center;
+}
+
+.autohemoterapia{
+  color: #fff;
+  text-align: center;
+}
+
+.autohemoterapia p{
+  color: #fff;
+  text-align: center;
+}
+
+.reflexologia{
+  color: #fff;
+  text-align: center;
+}
+.reflexologia p{
+  color: #fff;
+  text-align: center;
+}
+
+.masajes{
+  color: #fff;
+  text-align: center;
+}
+
+.masajes p{
+  color: #fff;
+  text-align: center;
+}
+
+.shiasu{
+  color: #fff;
+  text-align: center;
+}
+
+.shiasu p{
+  color: #fff;
+  text-align: center;
+}
+
+.quiropraxia{
+  color: #fff;
+  text-align: center;
+}
+
+.quiropraxia p{
+  color: #fff;
+  text-align: center;
+}
+
+.electro{
+  color: #fff;
+  text-align: center;
+}
+
+.electro p{
+  color: #fff;
+  text-align: center;
+}
+
+.ventosas{
+  color: #fff;
+  text-align: center;
+}
+
+.ventosas p{
+  color: #fff;
+  text-align: center;
+}
+
+
+/* Codigo para los Precios de las terapias*/
+/*
+.sub-title{
+  margin-top: -5px;
+  font-weight: 600;
+  color:#fff;
+  margin-bottom: 55px;
+}
+
+.pp-section{
+  padding: 100px 0 85px 0;
+}
+
+.section-header{
+  margin-bottom: 35px;
+}
+
+.plan-style{
+margin: auto;
+text-align: center;
+background-color: #fff;
+position: relative;
+border-radius: 30px;
+transition: all .3s ease-in-out;
+}
+
+.plan-style .bg-blue{
+ background: linear-gradient(to left, #0097e6, #0652DD);
+}
+
+.plan-style .bg-blue-btn{
+  background: linear-gradient(to right,  #0097e6, #0652DD, #0652DD, #0097e6);
+background-size: 300% 100%;
+}
+
+.plan-style .bg-blue-btn:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+/*segunda tabla*/
+/*
+.plan-style .bg-orange{
+  background: linear-gradient(to left, #fe8c00, #f83600);
+ }
+ 
+ .plan-style .bg-orange-btn{
+   background: linear-gradient(to right,  #fe8c00, #f83600, #f83600, #fe8c00);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-orange-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+ /*Tercera tabla*/
+ /*
+.plan-style .bg-green{
+  background: linear-gradient(to left, #00fe89, #02d639);
+ }
+ 
+ .plan-style .bg-green-btn{
+   background: linear-gradient(to right,  #00fe89, #02d639, #02d639, #00fe89);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-green-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+ /*tercera tabla*/
+ /*
+ .plan-style .bg-primary{
+  background: linear-gradient(to left, #00bfff, #1e90ff);
+ }
+ 
+ .plan-style .bg-primary-btn{
+   background: linear-gradient(to right,  #00bfff, #1e90ff, #1e90ff, #00bfff);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-primary-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+/*cuarta tabla*/
+/*
+.plan-style .bg-secondary{
+  background: linear-gradient(to left, #696969, #808080);
+ }
+ 
+ .plan-style .bg-secondary-btn{
+   background: linear-gradient(to right,  #696969, #808080, #808080, #696969);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-secondary-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+/*quinta tabla*/
+/*
+.plan-style .bg-danger{
+  background: linear-gradient(to left, #8b0000, #b22222);
+ }
+ 
+ .plan-style .bg-danger-btn{
+   background: linear-gradient(to right,  #8b0000, #b22222, #b22222, #8b0000);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-danger-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+
+/*septa tabla*/
+/*
+.plan-style .bg-success{
+  background: linear-gradient(to left, #228b22, #006400);
+ }
+ 
+ .plan-style .bg-success-btn{
+   background: linear-gradient(to right,  #228b22, #006400, #228b22, #228b22);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-success-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+
+/*optava tabla*/
+/*
+.plan-style .bg-warning{
+  background: linear-gradient(to left, #daa520, #daa520);
+ }
+ 
+ .plan-style .bg-warning-btn{
+   background: linear-gradient(to right,  #daa520, #daa520, #daa520, #daa520);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-warning-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+
+/*novena tabla*/
+/*
+.plan-style .bg-info{
+  background: linear-gradient(to left, #1e90ff, #6495ed);
+ }
+ 
+ .plan-style .bg-info-btn{
+   background: linear-gradient(to right,  #1e90ff, #6495ed, #6495ed, #1e90ff);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-info-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+
+/*decima tabla*/
+/*
+.plan-style .bg-dark{
+  background: linear-gradient(to left, #000000, #160a02);
+ }
+ 
+ .plan-style .bg-dark-btn{
+   background: linear-gradient(to right,  #000000, #160a02, #160a02, #000000);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-dark-btn:hover{
+   background-position: 100% 0;
+   color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+ /*Onceava tabla*/
+ /*
+ .plan-style .bg-light{
+  background: linear-gradient(to left, #8b4513, #8b4513);
+ }
+ 
+ .plan-style .bg-light-btn{
+   background: linear-gradient(to right,  #8b4513, #8b4513, #8b4513, #8b4513);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-light-btn:hover{
+   background-position: 100% 0;
+  color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+/*tabla*/
+/*
+.plan-style .bg-white{
+  background: linear-gradient(to left, #7B68EE, #9370D8);
+ }
+ 
+ .plan-style .bg-white-btn{
+   background: linear-gradient(to right,  #7B68EE, #9370D8, #9370D8, #7B68EE);
+ background-size: 300% 100%;
+ }
+ 
+ .plan-style .bg-white-btn:hover{
+   background-position: 100% 0;
+  color: #fff;
+   box-shadow: 0px 20px 20px #eee;
+   transition: all .3s ease-in-out;
+ }
+/*no se para que sirve*/
+/*
+.plan-style .blue-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .orange-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: .7;
+}
+.plan-style .green-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: .9;
+}
+.plan-style .primary-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .secondary-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .danger-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .success-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .warning-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .info-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .dark-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .ligh-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.plan-style .white-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+/**/
+/*
+.plan-style-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 30px;
+}
+.plan-style .plan-header{
+  padding: 30px 0 20px 0;
+  z-index: 1;
+  position: relative;
+}
+.plan-style .plan-header h3{
+width: 60%;
+padding: 0px 12px;
+margin: -50px auto 0;
+border-radius: 40px;
+font-size: 20px;
+font-weight: 400;
+color:#fff;
+text-transform: capitalize;
+}
+
+.plan-style .plan-header .price{
+  width: 130px;
+  margin: 30px auto -2px;
+  border-radius: 5px;
+  display: flex;
+  color:#fff;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+}
+
+.plan-style .plan-header .price .prince-digit{
+  font-size: 55px;
+  font-weight: 900;
+
+}
+.plan-style.blue-shadow{
+  border: 2px solid #0652DD;
+  }
+  .plan-style.blue-shadow:hover{
+    box-shadow: 0px 0px 30px 1px #0652DD;
+    border: 2px solid transparent;
+  }
+.plan-style.active{
+box-shadow: 0pz 0px 30px -10px #f83600;
+}*/
+/*prueba*/
+.sub-title{
+  margin-top: -5px;
+  font-weight: 600;
+  color:#fff;
+  margin-bottom: 55px;
+}
+
+.pp-section{
+  padding: 100px 0 85px 0;
+}
+
+.section-header{
+  margin-bottom: 35px;
+}
+
+.plan-style{
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  border-radius: 30px;
+  transition: all .3s ease-in-out;
+  }
+
+.plan-style .bg-blue{
+  background: linear-gradient(to left, #0097e6, #0652DD);
+  
+}
+.plan-style .bg-blue-btn{
+  background: linear-gradient(to right, #0097e6, #0652DD, #0652DD, #0097e6);
+  background-size: 300% 100%;
+}
+
+.plan-style .bg-blue-btn:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+
+.plan-style .bg-orange{
+  background: linear-gradient(to left, #fe8c00, #f83600);
+
+
+}
+.plan-style .bg-orange-btn{
+  background: linear-gradient(to right, #fe8c00, #f83600, #f83600, #fe8c00);
+  background-size: 300% 100%;
+}
+
+.plan-style .bg-orange-btn:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+
+.plan-style .bg-green{
+  background: linear-gradient(to left, #00fe89, #02d639);
+}
+.plan-style .bg-green-btn{
+  background: linear-gradient(to right, #00fe89, #02d639, #02d639, #00fe89);
+  background-size: 300% 100%;
+}
+
+.plan-style .bg-green-btn:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+
+/*tabla primary*/
+.plan-style .bg-primary{
+  background: linear-gradient(to left, #2F4F4F, #2F4F4F);
+  
+}
+.plan-style .bg-primary-btn{
+  background: linear-gradient(to right, #2F4F4F, #2F4F4F, #2F4F4F, #2F4F4F);
+  background-size: 300% 100%;
+}
+
+.plan-style .plan-header:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+/**/
+.plan-style .bg-warning{
+  background: linear-gradient(to left, #360033, #0b8793);
+  
+}
+.plan-style .bg-warning-btn{
+  background: linear-gradient(to right, #2F4F4F, #2F4F4F, #2F4F4F, #2F4F4F);
+  background-size: 300% 100%;
+}
+
+.plan-style .plan-header:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+.plan-style .bg-info{
+  background: linear-gradient(to left, #EB5757, #000000);
+  
+}
+.plan-style .bg-info-btn{
+  background: linear-gradient(to right, #EB5757, #000000, #000000, #EB5757);
+  background-size: 300% 100%;
+}
+
+.plan-style .plan-header:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+
+/*tabla quiro*/
+.plan-style .bg-light{
+  background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
+  
+}
+.plan-style .bg-light-btn{
+  background: linear-gradient(to right, #2F4F4F, #2F4F4F, #2F4F4F, #2F4F4F);
+  background-size: 300% 100%;
+}
+
+.plan-style .plan-header:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+/**/
+.plan-style .bg-white{
+  background: linear-gradient(to left, #000428, #004e92);
+  
+}
+.plan-style .bg-white-btn{
+  background: linear-gradient(to right, #000428, #004e92, #000428, #004e92);
+  background-size: 300% 100%;
+}
+
+.plan-style .plan-header:hover{
+  background-position: 100% 0;
+  color: #fff;
+  box-shadow: 0px 20px 20px #eee;
+  transition: all .3s ease-in-out;
+}
+
+.plan-style .blue-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.plan-style .orange-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: .7;
+}
+
+.plan-style .green-bg-img{
+  background-image: url(../img/plan-bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: .9;
+}
+
+
+
+.plan-style-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+}
+
+.plan-style .plan-header{
+  padding: 30px 0 20px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.plan-style .plan-header h3 {
+  width: 100%;
+  padding: 0px 12px;
+  margin: -50px auto 0;
+  border-radius: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.plan-style .plan-header .price{
+  width: 130px;
+  margin: 30px auto -2px;
+  border-radius: 50px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+}
+
+.plan-style .plan-header .price .price-digit {
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.plan-style  .plan-detail{
+  z-index: 1;
+  position: relative;
+}
+
+.plan-style .plan-detail ul{
+  padding: 0;
+  list-style-type: none;
+  color: #666;
+}
+
+.plan-style .plan-detail ul li{
+  padding: 5px 0;
+}
+
+.plan-style .plan-bottom{
+  margin: 5px;
+  padding: 12px 0 32px 0;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  
+}
+
+.plan-style .plan-button{
+  padding: 10px 18px;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #111;
+  border: none;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+      
+}
+
+.plan-style.blue-shadow{
+  border: 2px solid #0652DD;
+}
+
+.plan-style.blue-shadow:hover{
+  box-shadow: 0px 0px 30px -1px #0652DD;
+  border: 2px solid transparent;
+}
+
+.plan-style.active{
+  box-shadow: 0pz 0px 30px -10px #f83600;
+}
+
+.plan-style.orange-shadow{
+  border: 2px solid #f83600;
+}
+
+.plan-style.orange-shadow:hover{
+  box-shadow: 0px 0px 30px -1px #f83600;
+  border: 2px solid transparent;
+}
+
+.plan-style.green-shadow{
+  border: 2px solid #02d639;
+}
+
+.plan-style.green-shadow:hover{
+  box-shadow: 0px 0px 30px -1px #02d639;
+  border: 2px solid transparent;
+}
+/*reponcive de la tabla para celulares*/
+@media only screen and (max-width:991px){
+ .plan-table>div:nth-last-child(-n + 1){
+   margin: 48px auto auto auto;
+} 
+.plan-style.plan-style.blue-shadow{
+  box-shadow: 0px 0px 30px -10px #0652DD;
+  }
+.plan-style.plan-style.green-shadow{
+  box-shadow: 0px 0px 30px -10px #02d639;
+}
+}
+@media only screen and (max-width: 767px){
+.plan-style{
+  max-width: 400px;
+}
+.plan-table>div:nth-last-child(-n + 2){
+  margin: 48px auto auto auto;
+}
+}
+  
+@media only screen and (max-width:576px){
+  .plan-style{
+    max-width: 350px;
+  }
+}
+/*codigo css para el formulario contacto*/
+
+/*footer*/
+.footer-cotacto{
+  color: #fff;
+  text-align: center;
+}
+
+.footer-cotacto p{
+  color: #fff;
+}
+
+.footer-cotacto h3{
+  color: #ffff00
+}

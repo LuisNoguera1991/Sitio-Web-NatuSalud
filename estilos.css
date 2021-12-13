@@ -960,6 +960,46 @@ box-shadow: 0pz 0px 30px -10px #f83600;
   }
 }
 /*codigo css para el formulario contacto*/
+h1
+{
+  color: #fff;
+  margin-top:100px;
+}
+
+input
+{
+ width: 300px;
+ height: 35px;
+}
+
+textarea
+{
+ width: 600px;
+ height: 70px;
+ margin-top:5px;
+}
+
+input,textarea
+{
+background: transparent;
+border: solid 2px #fff;
+color: #fff;
+}
+
+input[type=submit]
+{
+
+  color: #fff;
+  }
+
+  ::-webkit-input-placeholder
+  {
+    color: #fff;
+    }
+
+
+
+
 
 /*footer*/
 .footer-cotacto{
